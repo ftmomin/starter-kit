@@ -1,0 +1,25 @@
+{
+	"Region": {
+		"prefix": "reg",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact",
+		"body": [
+			"//#region  //*=========== ${1} ===========",
+			"${TM_SELECTED_TEXT}$0",
+			"//#endregion  //*======== ${1} ===========",
+		],
+	},
+	"Suspense": {
+		"prefix": "suspense",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact",
+		"body": [
+			"<Suspense fallback={<LoadingSpinner />}>",
+			"\t${TM_SELECTED_TEXT}$0",
+			"</Suspense>",
+		],
+	},
+	"Console Log": {
+		"prefix": "clo",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact",
+		"body": ["console.log('$1', $1);"],
+	},
+}
